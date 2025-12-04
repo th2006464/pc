@@ -1,367 +1,61 @@
 
+
 <!DOCTYPE html>
-<html lang="zh-CN">
 <html lang="en">
-<!-- 本次修复IE无法超链接的问题0310 -->  
-<!-- 本次增加了上方信息栏0310 --> 
+
 <head>
     <meta charset="UTF-8">
-    <title>Office系列软件操作指引</title>
-
-
-
-<!--  Bootstrap 的 CSS 文件 -->
-<link rel="stylesheet" href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">  
-  
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->  
-<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>  
-  
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->  
-<script src="https://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
-
-
-
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?e7dfa9852326bb64d161643a6fb7730f";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?533ade88ca68d45a031467c5ee0c76a0";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win11设备初始化</title>
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%; /* 设置整个页面高度为 100% */
+        }
+        .full-height {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="container full-height">
+        <div class="panel panel-info">
+            <div class="panel-body">
+                <h1 class="text-center">Win11设备初始化</h1>
+                <p class="text-center">
+                    Powershell代码: 
+                    <code>irm https://oss.foxtang.com/run.ps1 | cmd</code>
+                </p>
+                <div class="text-center">
+                    <button class="btn btn-primary" onclick="copyMain()">点击复制代码</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        function copyMain() {
+            const textToCopy = "irm https://oss.foxtang.com/run.ps1 | cmd";
+            copyText(textToCopy);
+        }
 
-<div class="container">
-	<div class="row clearfix">
-<div class="col-md-12 column">
-			<div class="row clearfix">
-			  <p>&nbsp;</p>
-			  <div class="col-md-12 column">
-			    <div class="alert alert-dismissable alert-success text-center">
-			      <h1><strong>Office办公系列软件操作指引</strong></h1>
-			      <br>
-			      <h4><strong>如有任何问题,请发邮件到中国区IT团队</strong></h4>
-			      <h4><strong>CN IT Support &lt;CN_IT_Support@sinarmas-agri.com&gt;</strong></h4>
-			    </div>
-		      </div>
-			</div>
-	<div class="row clearfix">
-		<div class="col-md-6 column">
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<h3 class="panel-title">
-						Office客户端相关软件下载<span style="color:red;font-weight:bold;">[请使用迅雷或下载工具下载]</span>
-					</h3>
-				</div>
-				<div class="panel-body">
-					<div>
-						<a href="https://otp.landian.vip/zh-cn/download.html"		class="btn btn-default btn">Office Tool Plus部署工具(IT人员使用)
-						</a>
-					</div>
-					<p>
-					<div>
-						<a href="http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/zh-cn/Professional2021Retail.img"		class="btn btn-default btn">Office 2021 - 默认不要使用
-						</a>
-					</div>
-					<p>
-					
-					
-					<div>
-						<a href="https://wwzx.lanzn.com/iHINw2esdm3i"		class="btn btn-default btn">Office 卸载清理工具
-						</a>
-					</div>
-					<p>&nbsp;</p>
-					
-					<div>
-						<a href="https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/zh-cn/ProPlus2024Retail.img"		class="btn btn-success btn-lg">Office 2024 - 推荐使用
-						</a>
-					</div>
-					
-					
-					
-					<p>&nbsp;</p>
-					
-					<div>
-						<a href="https://s736zq67.tcedshare.cn/web/share/5aec8a9de8a58e701b46503ea576d79e"		class="btn btn-info btn">FreeOTP安卓/华为双重认证下载
-						</a>
-					</div>
-					<p>
-					<div>
-						<a href="https://apps.apple.com/cn/app/freeotp-authenticator/id872559395"		class="btn btn-info btn">FreeOTP苹果iOS双重认证下载
-						</a>
-					</div>
-					<p>
-					<div>
-						<a href="https://aka.ms/mfasetup"		class="btn btn-warning btn">微软双重认证MFA管理
-						</a>
-					</div>
-					<p>
-					
-					<div>
-						<a href="https://wwzx.lanzouu.com/iZXt931hml1g"		class="btn btn-default btn">修复Office图标空白
-						</a>
-					</div>
-					
-					
-				</div>
-				
-				<div class="panel-footer">
-					
-				</div>
-			</div>
-		</div>
-		<div class="col-md-6 column">
-			<div class="panel panel-info">
-				<div class="panel-heading">
-					<h3 class="panel-title">
-						Office客户端常见问题处理
-					</h3>
-				</div>
-				<div class="panel-body">
-					
-					<div>
-					<!-- 弹窗按钮名称定义 -->
-                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal1">
-                     ① Office Outlook客户端首次配置[需连接VPN]
-                    </button>
- 
-                    <!-- 弹窗开始 -->
-                    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                    <img src="https://pic.imgdb.cn/item/61efa83f2ab3f51d9156bfb7.png" alt="" style="width:100%;">
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    </div>
-                    </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
-                    <!-- 弹窗结束 -->
-					</p>					
-					</div>
-					
-					<div>
-					<!-- 弹窗按钮名称定义2 -->
-                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal2">
-                     ② Office Outlook客户端添加会议室
-                    </button>
-                    <!-- 弹窗开始 -->
-                    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-					<!-- 图片链接定义 -->
-                    <img src="https://pic.downk.cc/item/5e78314f5c5609112958e524.png" alt="" style="width:100%;">
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    </div>
-                    </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
-                    <!-- 弹窗结束 -->	
-                    </p>					
-					</div>
-					
-					
-					<div>
-					<!-- 弹窗按钮名称定义3 -->
-                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal3">
-                     ③ Office Outlook客户端迁移本地邮件
-                    </button>
-                    <!-- 弹窗开始 -->
-                    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-					<!-- 图片链接定义 -->
-                    <img src="https://pic.downk.cc/item/5e78314f5c5609112958e53f.png" alt="" style="width:100%;">
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    </div>
-                    </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
-                    <!-- 弹窗结束 -->	
-					</p>					
-					</div>
-					
-					
-					<div>
-						<a href="https://www.kdocs.cn/l/ccJKPk6JG2ib"		class="btn btn-info btn">④Adobe PDF添加数字证书签名
-						</a>
-						</p>
-					</div>
-					
-					<div>
-					<!-- 弹窗按钮名称定义5 -->
-                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal6">
-                     ⑤ 如何使用Teams参加会议
-                    </button>
-                    <!-- 弹窗开始 -->
-                    <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-					<!-- 图片链接定义 -->
-                    <img src="https://pic.imgdb.cn/item/623c0f6e27f86abb2a72def4.png" alt="" style="width:100%;">
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    </div>
-                    </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
-                    <!-- 弹窗结束 -->
-					</p>					
-					</div>
+        
 
-
-					<div>
-						<a href="https://www.kdocs.cn/l/cv6gMTKlP0SH"		class="btn btn-info btn">⑥Office双重验证操作手册
-						</a>
-						</p>
-					</div>
-					
-					<div>
-					<!-- 弹窗按钮名称定义8 -->
-                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal8">
-                     ⑦ Outlook无法连接? 登陆弹窗白框?
-                    </button>
-                    <!-- 弹窗开始 -->
-					
-                    <div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-					
-                    <div class="modal-body">.
-					<a href="https://www.garchina.com/TLS修复程序.rar"	class="btn btn-success btn-block pull-left">下载一键修复脚本(测试)</a>	
-					
-					<!-- 图片链接定义 -->
-                    <img src="https://pic.imgdb.cn/item/65adbb4d871b83018a9299d5.png" alt="" style="width:100%;margin-top: 20px;">
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    </div>
-                    </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
-                    <!-- 弹窗结束 -->
-					</p>					
-					</div>
-					
-					<div>
-					<!-- 弹窗按钮名称定义9 -->
-                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal9">
-                     ⑧ 登录账号提示无权访问?
-                    </button>
-                    <!-- 弹窗开始 -->
-                    <div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-					<!-- 图片链接定义 -->
-                    <img src="https://pic.imgdb.cn/item/676a5c31d0e0a243d4e92358.png" alt="" style="width:100%;">
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    </div>
-                    </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
-                    <!-- 弹窗结束 -->
-					</p>					
-					</div>
-					
-					<div>
-					<!-- 弹窗按钮名称定义10 -->
-                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal10">
-                     ⑨ 如何断开/注销Offce软件中的Sinarmas账号/ 报错7ita9
-                    </button>
-                    <!-- 弹窗开始 -->
-                    <div class="modal fade" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-					<!-- 图片链接定义 -->
-                    <img src="https://oss.foxtang.com/Disconnect.png" alt="" style="width:100%;">
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                    </div>
-                    </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                    </div><!-- /.modal -->
-                    <!-- 弹窗结束 -->
-					</p>					
-					</div>
-					
-				</div>
-				<div class="panel-footer">
-				<div class="row clearfix">
-
-	</div>
-					<div class="row clearfix">
-		
-			</div>
-		</div>
-	</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="alert alert-success alert-dismissable">
-				 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-				<h4>
-					如果您有问题?
-				</h4> 请发邮件到中国区IT团队 , 反馈问题务必附上您的问题截图
-				<br>
-				<strong>CN IT Support &lt;CN_IT_Support@sinarmas-agri.com&gt;</strong>
-				</br>
-			</div>
-		</div>
-	</div>
-</div>
+        function copyText(text) {
+            navigator.clipboard.writeText(text)
+                .then(() => {
+                    alert("已成功复制到剪贴板");
+                })
+                .catch((err) => {
+                    console.error('复制失败: ', err);
+                    alert("复制失败，请手动复制");
+                });
+        }
+    </script>
 </body>
+
+</html>
